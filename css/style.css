@@ -1,4 +1,4 @@
-/* ── PALETA ──────────────────────────────────────────────────── */
+/* Temas preto * branco */
 :root[data-theme="dark"] {
   --bg:          #0f0e0e;
   --bg2:         #181616;
@@ -9,8 +9,8 @@
   --text:        #ede8e3;
   --text2:       #8c8480;
   --text3:       #4a4545;
-  --accent:      #bf3b2c;
-  --accent2:     #d94f40;
+  --accent:      #5bc0be;
+  --accent2:     #378f8d;
   --accent-dim:  rgba(191,59,44,.12);
   --sidebar-bg:  #0f0e0e;
   --header-bg:   rgba(15,14,14,.88);
@@ -45,10 +45,10 @@ body {
   transition: background .35s, color .35s;
 }
 
-/* ── LAYOUT ──────────────────────────────────────────────────── */
+/* Layout do site */
 .site { display: flex; min-height: 100vh; }
 
-/* ── SIDEBAR ─────────────────────────────────────────────────── */
+/* Barra lateral */
 .sidebar {
   width: 300px; flex-shrink: 0;
   position: fixed; top: 0; left: 0; bottom: 0;
@@ -103,7 +103,7 @@ body {
 }
 .icon-btn:hover { color: var(--text2); border-color: var(--text2); }
 
-/* ── CONTEÚDO ────────────────────────────────────────────────── */
+/* Normal */
 .content { margin-left: 300px; flex: 1; }
 
 section {
@@ -117,7 +117,6 @@ section {
   display: flex; flex-direction: column; justify-content: center;
 }
 
-/* ── HERO ────────────────────────────────────────────────────── */
 #inicio {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -147,7 +146,7 @@ section {
 
 .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-/* Hero right — ficha */
+/* ficha */
 .hero-right-col {
   display: flex; flex-direction: column; gap: 1px;
   background: var(--border); border: 1px solid var(--border);
@@ -178,7 +177,7 @@ section {
 }
 @keyframes statusPulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.3;transform:scale(.7)} }
 
-/* ── BOTÕES ──────────────────────────────────────────────────── */
+/* Botões */
 .btn {
   display: inline-flex; align-items: center; gap: 0.5rem;
   font-family: 'Sora', sans-serif; font-size: 0.78rem; font-weight: 600;
@@ -191,7 +190,7 @@ section {
 .btn-outline { background: transparent; color: var(--text2); border: 1px solid var(--border2); }
 .btn-outline:hover { color: var(--text); border-color: var(--text2); transform: translateY(-1px); }
 
-/* ── CABEÇALHO DE SEÇÃO ──────────────────────────────────────── */
+/* Head */
 .sec-head { margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
 .sec-label {
   font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--accent);
@@ -199,7 +198,7 @@ section {
 }
 .sec-title { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.03em; color: var(--text); line-height: 1.1; }
 
-/* ── SOBRE ───────────────────────────────────────────────────── */
+/* Sobre */
 .sobre-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
 
 .sobre-text p { font-size: 0.93rem; color: var(--text2); line-height: 1.9; margin-bottom: 1rem; }
@@ -216,7 +215,7 @@ section {
 .meta-v { font-size: 0.82rem; color: var(--text); text-align: right; }
 .meta-v.available { color: var(--accent); }
 
-/* ── HABILIDADES ─────────────────────────────────────────────── */
+/* Habilidades */
 .skill-list { border-top: 1px solid var(--border); margin-bottom: 3rem; }
 
 .sk-row {
@@ -242,7 +241,7 @@ section {
 .comp-title { font-size: 0.82rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; line-height: 1.3; }
 .comp-desc { font-size: 0.74rem; color: var(--text2); line-height: 1.65; }
 
-/* ── GITHUB ──────────────────────────────────────────────────── */
+/* Github */
 .gh-card { background: var(--bg2); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; margin-bottom: 1.5rem; max-width: 800px; }
 .gh-top { display: flex; align-items: center; gap: 1.25rem; padding: 1.4rem 1.5rem; border-bottom: 1px solid var(--border); }
 .gh-ava { width: 46px; height: 46px; border-radius: 50%; border: 1px solid var(--border2); overflow: hidden; flex-shrink: 0; background: var(--bg3); }
@@ -258,7 +257,7 @@ section {
 .gh-charts { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; max-width: 800px; }
 .gh-charts img { width: 100%; display: block; background: var(--bg2); }
 
-/* ── CONTATO ─────────────────────────────────────────────────── */
+/* Contato */
 .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; max-width: 800px; }
 .contact-note { font-size: 0.92rem; color: var(--text2); line-height: 1.85; margin-bottom: 2rem; }
 .contact-links { border-top: 1px solid var(--border); }
@@ -284,7 +283,7 @@ section {
   padding: 0.6rem 0.9rem; background: var(--bg3); border: 1px solid var(--border); border-radius: 5px;
 }
 
-/* ── LINKEDIN BADGE ──────────────────────────────────────────── */
+/* Integração linkedin */
 .li-badge-wrapper {
   margin-top: 1.5rem;
 }
@@ -294,7 +293,7 @@ section {
   display: none !important;
 }
 
-/* ── MOBILE ──────────────────────────────────────────────────── */
+/* Personalização p celular */
 .mob-header {
   display: none; position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   height: 52px; background: var(--header-bg); backdrop-filter: blur(12px);
@@ -313,14 +312,14 @@ section {
 }
 .mob-nav.open { display: flex; }
 
-/* ── REVEAL ──────────────────────────────────────────────────── */
+/* Mostrar gradiente */
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
 
-/* ── CONTADOR ANIMADO ────────────────────────────────────────── */
+/* Contador */
 .counter { font-variant-numeric: tabular-nums; }
 
-/* ── TOOLTIP NAS SKILLS ──────────────────────────────────────── */
+/* Tooltip dentro das habilidades */
 .sk-row { position: relative; }
 .sk-tooltip {
   position: absolute; right: 0; top: -2.2rem;
@@ -332,14 +331,14 @@ section {
 }
 .sk-row:hover .sk-tooltip { opacity: 1; }
 
-/* ── SCROLL PROGRESS ─────────────────────────────────────────── */
+/* Progresso scroll */
 .scroll-bar {
   position: fixed; top: 0; left: 300px; right: 0; height: 2px;
   background: var(--accent); z-index: 200; transform-origin: left;
   transform: scaleX(0); transition: transform .1s linear;
 }
 
-/* ── LINHA DE TEMPO (seção sobre) ────────────────────────────── */
+/* Timeline */
 .timeline { margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0; }
 .tl-item {
   display: flex; gap: 1.25rem; align-items: flex-start;
@@ -357,11 +356,11 @@ section {
   width: 6px; height: 6px; border-radius: 50%; background: var(--border2);
   flex-shrink: 0; margin-top: 0.35rem;
 }
-.tl-content {}
+
 .tl-title { font-size: 0.84rem; font-weight: 600; color: var(--text); margin-bottom: 0.15rem; }
 .tl-desc { font-size: 0.76rem; color: var(--text2); line-height: 1.5; }
 
-/* ── RESPONSIVE ──────────────────────────────────────────────── */
+/* Responsividade */
 @media (max-width: 960px) {
   .sidebar { display: none; }
   .content { margin-left: 0; }

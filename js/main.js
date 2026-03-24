@@ -1,6 +1,4 @@
-/* ══════════════════════════════════════════════════════
-   TEMA
-══════════════════════════════════════════════════════ */
+/* Tema escuro & claro */
 const htmlEl = document.documentElement;
 const ghStats = document.getElementById('ghStats');
 const ghLangs = document.getElementById('ghLangs');
@@ -22,16 +20,12 @@ document.getElementById('mobTheme').addEventListener('click', toggleTheme);
 const saved = localStorage.getItem('ldc-theme');
 if (saved) setTheme(saved);
 
-/* ══════════════════════════════════════════════════════
-   MOBILE MENU
-══════════════════════════════════════════════════════ */
+/* Menu do celular */
 const mobNav = document.getElementById('mobNav');
 document.getElementById('mobHam').addEventListener('click', () => mobNav.classList.toggle('open'));
 mobNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobNav.classList.remove('open')));
 
-/* ══════════════════════════════════════════════════════
-   ACTIVE LINK NO SCROLL
-══════════════════════════════════════════════════════ */
+/* Entrada ao rolar pag */
 const sections = document.querySelectorAll('section[id]');
 const navLinks = document.querySelectorAll('.s-link[data-section]');
 const scrollObs = new IntersectionObserver(entries => {
@@ -44,9 +38,7 @@ const scrollObs = new IntersectionObserver(entries => {
 }, { threshold: 0.35 });
 sections.forEach(s => scrollObs.observe(s));
 
-/* ══════════════════════════════════════════════════════
-   REVEAL
-══════════════════════════════════════════════════════ */
+/* Animação mostrar */
 const revObs = new IntersectionObserver(entries => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) setTimeout(() => e.target.classList.add('visible'), i * 70);
@@ -54,9 +46,7 @@ const revObs = new IntersectionObserver(entries => {
 }, { threshold: 0.07 });
 document.querySelectorAll('.reveal').forEach(el => revObs.observe(el));
 
-/* ══════════════════════════════════════════════════════
-   SKILL BARS
-══════════════════════════════════════════════════════ */
+/* Habilidades */
 const barObs = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting)
@@ -67,9 +57,7 @@ const barObs = new IntersectionObserver(entries => {
 const sl = document.getElementById('skillsList');
 if (sl) barObs.observe(sl);
 
-/* ══════════════════════════════════════════════════════
-   CONTADORES ANIMADOS
-══════════════════════════════════════════════════════ */
+/* Contadores */
 function animateCounter(el, target, duration = 1200) {
   const start = performance.now();
   const update = (now) => {
@@ -93,9 +81,7 @@ const cntObs = new IntersectionObserver(entries => {
 }, { threshold: 0.3 });
 document.querySelectorAll('#sobre').forEach(s => cntObs.observe(s));
 
-/* ══════════════════════════════════════════════════════
-   SCROLL PROGRESS BAR
-══════════════════════════════════════════════════════ */
+/* Barra de progresso */
 const scrollBar = document.getElementById('scrollBar');
 window.addEventListener('scroll', () => {
   const total = document.documentElement.scrollHeight - window.innerHeight;

@@ -1,342 +1,440 @@
 <!DOCTYPE html>
 <html lang="pt-BR" data-theme="dark">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lucas Domingos Costa</title>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Domingos Costa</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
+
 <body>
 
-<!-- Barra de progresso de scroll -->
-<div class="scroll-bar" id="scrollBar"></div>
+  <!-- Animação de progresso -->
+  <div class="scroll-bar" id="scrollBar"></div>
 
-<!-- MOBILE HEADER -->
-<div class="mob-header">
-  <span class="mob-logo">Lucas D. Costa</span>
-  <div class="mob-ctrl">
-    <button class="icon-btn" id="mobTheme" aria-label="Tema">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-    </button>
-    <button class="icon-btn" id="mobHam" aria-label="Menu">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-    </button>
-  </div>
-</div>
-
-<div class="mob-nav" id="mobNav">
-  <a href="#inicio"      class="s-link">Início<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-  <a href="#sobre"       class="s-link">Sobre<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-  <a href="#habilidades" class="s-link">Habilidades<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-  <a href="#github"      class="s-link">GitHub<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-  <a href="#contato"     class="s-link">Contato<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-</div>
-
-<div class="site">
-  <aside class="sidebar">
-    <div class="s-identity">
-      <div class="s-name">Lucas Domingos Costa</div>
-      <div class="s-bio">Desenvolvedor Web e estudante de Segurança Cibernética.</div>
-    </div>
-    <nav class="s-nav">
-      <a href="#inicio"      class="s-link active" data-section="inicio">Início<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-      <a href="#sobre"       class="s-link" data-section="sobre">Sobre<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-      <a href="#habilidades" class="s-link" data-section="habilidades">Habilidades<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-      <a href="#github"      class="s-link" data-section="github">GitHub<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-      <a href="#contato"     class="s-link" data-section="contato">Contato<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg></a>
-    </nav>
-    <div class="s-bottom">
-      <div class="s-ext-links">
-        <a href="https://github.com/LucasDomingoscode" target="_blank">GitHub</a>
-        <a href="mailto:seuemail@email.com">E-mail</a>
-        <a href="https://linkedin.com/in/lucas-domingos-49183a371" target="_blank">LinkedIn</a>
-      </div>
-      <button class="icon-btn" id="themeBtn" aria-label="Tema">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+  <!-- header p/celular -->
+  <div class="mob-header">
+    <span class="mob-logo">Lucas D. Costa</span>
+    <div class="mob-ctrl">
+      <button class="icon-btn" id="mobTheme" aria-label="Tema">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5" />
+          <line x1="12" y1="1" x2="12" y2="3" />
+          <line x1="12" y1="21" x2="12" y2="23" />
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+          <line x1="1" y1="12" x2="3" y2="12" />
+          <line x1="21" y1="12" x2="23" y2="12" />
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+        </svg>
+      </button>
+      <button class="icon-btn" id="mobHam" aria-label="Menu">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <line x1="3" y1="18" x2="21" y2="18" />
+        </svg>
       </button>
     </div>
-  </aside>
+  </div>
 
-  <main class="content">
+  <div class="mob-nav" id="mobNav">
+    <a href="#inicio" class="s-link">Início<svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7v10" />
+      </svg></a>
+    <a href="#sobre" class="s-link">Sobre<svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7v10" />
+      </svg></a>
+    <a href="#habilidades" class="s-link">Habilidades<svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7v10" />
+      </svg></a>
+    <a href="#github" class="s-link">GitHub<svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7v10" />
+      </svg></a>
+    <a href="#contato" class="s-link">Contato<svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+        stroke="currentColor" stroke-width="2">
+        <path d="M7 17L17 7M17 7H7M17 7v10" />
+      </svg></a>
+  </div>
 
-    <!-- 1. INÍCIO -->
-    <section id="inicio">
-      <div class="hero-left-col">
-        <p class="hero-eyebrow reveal">Belo Horizonte, Brasil</p>
-        <h1 class="hero-h1 reveal">
-          Lucas<br>
-          <span class="dim">Domingos</span><br>
-          Costa.
-        </h1>
-        <p class="hero-desc reveal">
-          Desenvolvedor web com foco em <strong>interfaces funcionais</strong> e <strong>código seguro</strong>.
-          Cursando Segurança Cibernética — aplico proteção desde a primeira linha.
-        </p>
-        <div class="hero-ctas reveal">
-          <a href="#contato" class="btn btn-solid">Entrar em contato</a>
-          <a href="https://github.com/LucasDomingoscode" target="_blank" class="btn btn-outline">
-            <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.304 3.495.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-            Ver GitHub
-          </a>
-        </div>
+  <div class="site">
+    <aside class="sidebar">
+      <div class="s-identity">
+        <div class="s-name">Lucas Domingos Costa</div>
+        <div class="s-bio">Desenvolvedor Web e estudante de Segurança Cibernética.</div>
       </div>
-
-      <div class="hero-right-col reveal">
-        <div class="hi-card hi-available">
-          <span class="hi-label">Status</span>
-          <div class="hi-value">Disponível</div>
-          <div class="hi-sub">Aberto a oportunidades e colaborações</div>
+      <nav class="s-nav">
+        <a href="#inicio" class="s-link active" data-section="inicio">Início<svg width="10" height="10"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg></a>
+        <a href="#sobre" class="s-link" data-section="sobre">Sobre<svg width="10" height="10" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg></a>
+        <a href="#habilidades" class="s-link" data-section="habilidades">Habilidades<svg width="10" height="10"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg></a>
+        <a href="#github" class="s-link" data-section="github">GitHub<svg width="10" height="10" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg></a>
+        <a href="#contato" class="s-link" data-section="contato">Contato<svg width="10" height="10" viewBox="0 0 24 24"
+            fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7v10" />
+          </svg></a>
+      </nav>
+      <div class="s-bottom">
+        <div class="s-ext-links">
+          <a href="https://github.com/LucasDomingoscode" target="_blank">GitHub</a>
+          <a href="mailto:lucasdomingoscosta1@gmail.com">E-mail</a>
+          <a href="https://www.linkedin.com/in/lucasdomingosc" target="_blank">LinkedIn</a>
         </div>
-        <div class="hi-card">
-          <span class="hi-label">Área</span>
-          <div class="hi-value">Desenvolvimento Web</div>
-          <div class="hi-sub">Front-end · SQL · JavaScript</div>
-        </div>
-        <div class="hi-card">
-          <span class="hi-label">Formação</span>
-          <div class="hi-value">Segurança Cibernética</div>
-          <div class="hi-sub">Ensino superior — em andamento</div>
-        </div>
-        <div class="hi-card">
-          <span class="hi-label">Localização</span>
-          <div class="hi-value">Belo Horizonte</div>
-          <div class="hi-sub">Minas Gerais, Brasil · Remoto</div>
-        </div>
-        <div class="hi-card">
-          <span class="hi-label">GitHub</span>
-          <div class="hi-value">LucasDomingoscode</div>
-          <div class="hi-sub"><a href="https://github.com/LucasDomingoscode" target="_blank" style="color:var(--text2);text-decoration:none;transition:color .2s" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text2)'">github.com/LucasDomingoscode ↗</a></div>
-        </div>
+        <button class="icon-btn" id="themeBtn" aria-label="Tema">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </svg>
+        </button>
       </div>
-    </section>
+    </aside>
 
-    <!-- 2. SOBRE -->
-    <section id="sobre">
-      <div class="sec-head reveal">
-        <div class="sec-label">sobre</div>
-        <div class="sec-title">Quem sou eu</div>
-      </div>
-      <div class="sobre-grid">
-        <div class="sobre-text reveal">
-          <p>Sou <strong>Lucas Domingos Costa</strong>, desenvolvedor web com interesse real em construir produtos que funcionem bem e resistam a falhas. Trabalho com HTML, CSS, JavaScript e SQL com atenção à qualidade e à legibilidade do código.</p>
-          <p>Atualmente cursando <strong>Segurança Cibernética</strong> no ensino superior. Isso muda a forma como desenvolvo: vulnerabilidades são consideradas desde o início, não no final. Segurança é parte da arquitetura, não uma revisão.</p>
-          <p>Baseado em Belo Horizonte, aberto a trabalho remoto e híbrido.</p>
+    <main class="content">
 
-          <!-- Linha do tempo -->
-          <div class="timeline">
-            <div class="tl-item">
-              <span class="tl-year">2022</span>
-              <span class="tl-dot"></span>
-              <div class="tl-content">
-                <div class="tl-title">Início em desenvolvimento web</div>
-                <div class="tl-desc">Primeiros projetos com HTML, CSS e JavaScript.</div>
-              </div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-year">2023</span>
-              <span class="tl-dot"></span>
-              <div class="tl-content">
-                <div class="tl-title">SQL e banco de dados</div>
-                <div class="tl-desc">Expansão para back-end e modelagem de dados relacionais.</div>
-              </div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-year">2024</span>
-              <span class="tl-dot"></span>
-              <div class="tl-content">
-                <div class="tl-title">Início da graduação em Seg. Cibernética</div>
-                <div class="tl-desc">Análise de vulnerabilidades e desenvolvimento seguro.</div>
-              </div>
-            </div>
-            <div class="tl-item">
-              <span class="tl-year">2025</span>
-              <span class="tl-dot" style="background:var(--accent)"></span>
-              <div class="tl-content">
-                <div class="tl-title">Presente — em evolução</div>
-                <div class="tl-desc">Projetos práticos, open source e busca por oportunidades.</div>
-              </div>
-            </div>
+      <!-- Resumo de inicio -->
+      <section id="inicio">
+        <div class="hero-left-col">
+          <p class="hero-eyebrow reveal">Belo Horizonte, Brasil</p>
+          <h1 class="hero-h1 reveal">
+            Lucas<br>
+            <span class="dim">Domingos</span><br>
+            Costa.
+          </h1>
+          <p class="hero-desc reveal">
+            Desenvolvedor web com foco em <strong>interfaces funcionais</strong> e <strong>código seguro</strong>.
+          </p>
+          <div class="hero-ctas reveal">
+            <a href="#contato" class="btn btn-solid">Entrar em contato</a>
+            <a href="https://github.com/LucasDomingoscode" target="_blank" class="btn btn-outline">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.304 3.495.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              Ver GitHub
+            </a>
           </div>
         </div>
 
-        <div class="sobre-meta reveal">
-          <div class="meta-row"><span class="meta-k">Área</span><span class="meta-v">Desenvolvimento Web</span></div>
-          <div class="meta-row"><span class="meta-k">Formação</span><span class="meta-v">Segurança Cibernética</span></div>
-          <div class="meta-row"><span class="meta-k">Localização</span><span class="meta-v">Belo Horizonte, BR</span></div>
-          <div class="meta-row"><span class="meta-k">Modalidade</span><span class="meta-v">Remoto · Híbrido</span></div>
-          <div class="meta-row"><span class="meta-k">Status</span><span class="meta-v available">Disponível</span></div>
+        <div class="hero-right-col reveal">
+          <div class="hi-card hi-available">
+            <span class="hi-label">Status</span>
+            <div class="hi-value">Disponível</div>
+            <div class="hi-sub">Aberto a oportunidades e colaborações</div>
+          </div>
+          <div class="hi-card">
+            <span class="hi-label">Área</span>
+            <div class="hi-value">Desenvolvimento Web</div>
+            <div class="hi-sub">Front-end · SQL · JavaScript</div>
+          </div>
+          <div class="hi-card">
+            <span class="hi-label">Formação</span>
+            <div class="hi-value">Segurança Cibernética</div>
+            <div class="hi-sub">Ensino superior — em andamento</div>
+          </div>
+          <div class="hi-card">
+            <span class="hi-label">Localização</span>
+            <div class="hi-value">Belo Horizonte</div>
+            <div class="hi-sub">Minas Gerais, Brasil · Remoto</div>
+          </div>
+          <div class="hi-card">
+            <span class="hi-label">GitHub</span>
+            <div class="hi-value">LucasDomingoscode</div>
+            <div class="hi-sub"><a href="https://github.com/LucasDomingoscode" target="_blank"
+                style="color:var(--text2);text-decoration:none;transition:color .2s"
+                onmouseover="this.style.color='var(--accent)'"
+                onmouseout="this.style.color='var(--text2)'">github.com/LucasDomingoscode ↗</a></div>
+          </div>
+        </div>
+      </section>
 
-          <!-- Contadores animados -->
-          <div style="margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:7px;overflow:hidden;">
-            <div style="background:var(--bg2);padding:1.25rem 1rem;">
-              <div style="font-size:1.8rem;font-weight:700;color:var(--text);letter-spacing:-0.04em;line-height:1;" class="counter" data-target="3">0</div>
-              <div style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">Anos em tech</div>
-            </div>
-            <div style="background:var(--bg2);padding:1.25rem 1rem;">
-              <div style="font-size:1.8rem;font-weight:700;color:var(--text);letter-spacing:-0.04em;line-height:1;" class="counter" data-target="4">0</div>
-              <div style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">Tecnologias core</div>
-            </div>
-            <div style="background:var(--bg2);padding:1.25rem 1rem;">
-              <div style="font-size:1.8rem;font-weight:700;color:var(--text);letter-spacing:-0.04em;line-height:1;" class="counter" data-target="10">0</div>
-              <div style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">Projetos GitHub</div>
-            </div>
-            <div style="background:var(--bg2);padding:1.25rem 1rem;">
-              <div style="font-size:1.8rem;font-weight:700;color:var(--accent);letter-spacing:-0.04em;line-height:1;">∞</div>
-              <div style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">Curiosidade</div>
+      <!-- Sobre mim -->
+      <section id="sobre">
+        <div class="sec-head reveal">
+          <div class="sec-label">sobre</div>
+          <div class="sec-title">Quem sou eu</div>
+        </div>
+        <div class="sobre-grid">
+          <div class="sobre-text reveal">
+            <p>Sou <strong>Lucas Domingos Costa</strong>, desenvolvedor web com interesse real em construir produtos que
+              funcionem bem e resistam a falhas. Trabalho com HTML, CSS, JavaScript e SQL com atenção à qualidade e à
+              legibilidade do código.</p>
+            <p>Atualmente cursando <strong>Segurança Cibernética</strong> no ensino superior. Buscando identificar
+              vulnerabilidades e tornar o sistema mais seguro, aprimorando privacidade dos usuários e do proprietário.
+            </p>
+            <p>Localizado em Belo Horizonte, aberto a trabalho remoto e híbrido.</p>
+
+            <!-- Linha do tempo -->
+            <div class="timeline">
+              <div class="tl-item">
+                <span class="tl-year">2023</span>
+                <span class="tl-dot"></span>
+                <div class="tl-content">
+                  <div class="tl-title">Início em desenvolvimento web</div>
+                  <div class="tl-desc">Primeiros projetos com HTML, CSS e JavaScript.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year">2024</span>
+                <span class="tl-dot"></span>
+                <div class="tl-content">
+                  <div class="tl-title">SQL e banco de dados</div>
+                  <div class="tl-desc">Expansão para back-end e modelagem de dados relacionais.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year">2025</span>
+                <span class="tl-dot"></span>
+                <div class="tl-content">
+                  <div class="tl-title">Formação técnica em desenvolvimento de sistemas Web</div>
+                  <div class="tl-desc">Projetos práticos, TCC e busca por mais conhecimento.</div>
+                </div>
+              </div>
+              <div class="tl-item">
+                <span class="tl-year">2026</span>
+                <span class="tl-dot" style="background:var(--accent)"></span>
+                <div class="tl-content">
+                  <div class="tl-title">Início da graduação em Seg. Cibernética</div>
+                  <div class="tl-desc">Análise de vulnerabilidades e desenvolvimento seguro.</div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <!-- Badge LinkedIn -->
-          <div class="li-badge-wrapper">
+          <div class="sobre-meta reveal">
+            <div class="meta-row"><span class="meta-k">Área</span><span class="meta-v">Desenvolvimento Web</span></div>
+            <div class="meta-row"><span class="meta-k">Formação</span><span class="meta-v">Segurança Cibernética</span>
+            </div>
+            <div class="meta-row"><span class="meta-k">Localização</span><span class="meta-v">Belo Horizonte, BR</span>
+            </div>
+            <div class="meta-row"><span class="meta-k">Modalidade</span><span class="meta-v">Remoto · Híbrido</span>
+            </div>
+            <div class="meta-row"><span class="meta-k">Status</span><span class="meta-v available">Disponível</span>
+            </div>
+
+            <!-- Contadores animados -->
             <div
-              class="badge-base LI-profile-badge"
-              data-locale="pt_BR"
-              data-size="large"
-              data-theme="dark"
-              data-type="HORIZONTAL"
-              data-vanity="lucas-domingos-49183a371"
-              data-version="v1"
-            ></div>
+              style="margin-top:2rem;display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:7px;overflow:hidden;">
+              <div style="background:var(--bg2);padding:1.25rem 1rem;">
+                <div style="font-size:1.8rem;font-weight:700;color:var(--text);letter-spacing:-0.04em;line-height:1;"
+                  class="counter" data-target="3">0</div>
+                <div
+                  style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">
+                  Anos em tech</div>
+              </div>
+              <div style="background:var(--bg2);padding:1.25rem 1rem;">
+                <div style="font-size:1.8rem;font-weight:700;color:var(--text);letter-spacing:-0.04em;line-height:1;"
+                  class="counter" data-target="4">0</div>
+                <div
+                  style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">
+                  Tecnologias core</div>
+              </div>
+              <div style="background:var(--bg2);padding:1.25rem 1rem;">
+                <div style="font-size:1.8rem;font-weight:700;color:var(--text);letter-spacing:-0.04em;line-height:1;"
+                  class="counter" data-target="10">0</div>
+                <div
+                  style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">
+                  Projetos GitHub</div>
+              </div>
+              <div style="background:var(--bg2);padding:1.25rem 1rem;">
+                <div style="font-size:1.8rem;font-weight:700;color:var(--accent);letter-spacing:-0.04em;line-height:1;">
+                  ∞</div>
+                <div
+                  style="font-size:0.65rem;font-weight:500;color:var(--text3);letter-spacing:0.07em;text-transform:uppercase;margin-top:0.3rem;">
+                  Curiosidade</div>
+              </div>
+            </div>
+
+            <!-- Integração linkedin -->
+            <div class="li-badge-wrapper">
+              <div class="badge-base LI-profile-badge" data-locale="pt_BR" data-size="large" data-theme="dark"
+                data-type="HORIZONTAL" data-vanity="lucas-domingos-49183a371" data-version="v1"></div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 3. HABILIDADES -->
-    <section id="habilidades">
-      <div class="sec-head reveal">
-        <div class="sec-label">habilidades</div>
-        <div class="sec-title">Stack técnico</div>
-      </div>
-      <div class="skill-list reveal" id="skillsList">
-        <div class="sk-row" data-pct="88">
-          <span class="sk-name">HTML5</span>
-          <div class="sk-track"><div class="sk-fill"></div></div>
-          <span class="sk-pct">88%</span>
-          <div class="sk-tooltip">Marcação semântica e acessibilidade</div>
+      <!-- Habilidades -->
+      <section id="habilidades">
+        <div class="sec-head reveal">
+          <div class="sec-label">habilidades</div>
+          <div class="sec-title">Stack técnico</div>
         </div>
-        <div class="sk-row" data-pct="82">
-          <span class="sk-name">CSS3</span>
-          <div class="sk-track"><div class="sk-fill"></div></div>
-          <span class="sk-pct">82%</span>
-          <div class="sk-tooltip">Layouts responsivos e animações</div>
-        </div>
-        <div class="sk-row" data-pct="75">
-          <span class="sk-name">JavaScript</span>
-          <div class="sk-track"><div class="sk-fill"></div></div>
-          <span class="sk-pct">75%</span>
-          <div class="sk-tooltip">ES6+, DOM, Fetch API</div>
-        </div>
-        <div class="sk-row" data-pct="70">
-          <span class="sk-name">SQL</span>
-          <div class="sk-track"><div class="sk-fill"></div></div>
-          <span class="sk-pct">70%</span>
-          <div class="sk-tooltip">Modelagem e consultas relacionais</div>
-        </div>
-        <div class="sk-row" data-pct="78">
-          <span class="sk-name">Git & GitHub</span>
-          <div class="sk-track"><div class="sk-fill"></div></div>
-          <span class="sk-pct">78%</span>
-          <div class="sk-tooltip">Controle de versão e colaboração</div>
-        </div>
-        <div class="sk-row" data-pct="60">
-          <span class="sk-name">Cyber Security</span>
-          <div class="sk-track"><div class="sk-fill"></div></div>
-          <span class="sk-pct">60%</span>
-          <div class="sk-tooltip">OWASP, análise de vulnerabilidades</div>
-        </div>
-      </div>
-      <div class="comp-grid reveal">
-        <div class="comp-card">
-          <span class="comp-tag">security</span>
-          <div class="comp-title">Segurança por padrão</div>
-          <div class="comp-desc">Práticas OWASP integradas desde o início — não como revisão final.</div>
-        </div>
-        <div class="comp-card">
-          <span class="comp-tag">ux</span>
-          <div class="comp-title">Mobile-first</div>
-          <div class="comp-desc">Layouts responsivos que funcionam bem em qualquer resolução.</div>
-        </div>
-        <div class="comp-card">
-          <span class="comp-tag">perf</span>
-          <div class="comp-title">Performance</div>
-          <div class="comp-desc">Código enxuto, sem dependências desnecessárias.</div>
-        </div>
-        <div class="comp-card">
-          <span class="comp-tag">a11y</span>
-          <div class="comp-title">Acessibilidade</div>
-          <div class="comp-desc">HTML semântico e contraste adequado para todos os usuários.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 4. GITHUB -->
-    <section id="github">
-      <div class="sec-head reveal">
-        <div class="sec-label">open source</div>
-        <div class="sec-title">GitHub</div>
-      </div>
-      <div class="gh-card reveal">
-        <div class="gh-top">
-          <div class="gh-ava">
-            <img src="https://avatars.githubusercontent.com/LucasDomingoscode" alt="Lucas Domingos Costa" onerror="this.parentElement.style.background='var(--bg3)'">
+        <div class="skill-list reveal" id="skillsList">
+          <div class="sk-row" data-pct="88">
+            <span class="sk-name">HTML5</span>
+            <div class="sk-track">
+              <div class="sk-fill"></div>
+            </div>
+            <span class="sk-pct">88%</span>
+            <div class="sk-tooltip">Marcação semântica e acessibilidade</div>
           </div>
-          <div>
-            <div class="gh-name">Lucas Domingos Costa</div>
-            <div class="gh-handle">@LucasDomingoscode</div>
+          <div class="sk-row" data-pct="82">
+            <span class="sk-name">CSS3</span>
+            <div class="sk-track">
+              <div class="sk-fill"></div>
+            </div>
+            <span class="sk-pct">82%</span>
+            <div class="sk-tooltip">Layouts responsivos e animações</div>
           </div>
-          <a href="https://github.com/LucasDomingoscode" target="_blank" class="gh-cta">
-            Acessar perfil
-            <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          <div class="sk-row" data-pct="75">
+            <span class="sk-name">JavaScript</span>
+            <div class="sk-track">
+              <div class="sk-fill"></div>
+            </div>
+            <span class="sk-pct">75%</span>
+            <div class="sk-tooltip">ES6+, DOM, Fetch API</div>
+          </div>
+          <div class="sk-row" data-pct="70">
+            <span class="sk-name">SQL</span>
+            <div class="sk-track">
+              <div class="sk-fill"></div>
+            </div>
+            <span class="sk-pct">70%</span>
+            <div class="sk-tooltip">Modelagem e consultas relacionais</div>
+          </div>
+          <div class="sk-row" data-pct="78">
+            <span class="sk-name">Git & GitHub</span>
+            <div class="sk-track">
+              <div class="sk-fill"></div>
+            </div>
+            <span class="sk-pct">78%</span>
+            <div class="sk-tooltip">Controle de versão e colaboração</div>
+          </div>
+          <div class="sk-row" data-pct="60">
+            <span class="sk-name">Cyber Security</span>
+            <div class="sk-track">
+              <div class="sk-fill"></div>
+            </div>
+            <span class="sk-pct">60%</span>
+            <div class="sk-tooltip">OWASP, análise de vulnerabilidades</div>
+          </div>
+        </div>
+        <div class="comp-grid reveal">
+          <div class="comp-card">
+            <span class="comp-tag">security</span>
+            <div class="comp-title">Segurança por padrão</div>
+            <div class="comp-desc">Práticas OWASP integradas durante o desenvolvimento.</div>
+          </div>
+          <div class="comp-card">
+            <span class="comp-tag">ux</span>
+            <div class="comp-title">Mobile-first</div>
+            <div class="comp-desc">Layouts responsivos que funcionam bem em qualquer resolução.</div>
+          </div>
+          <div class="comp-card">
+            <span class="comp-tag">perf</span>
+            <div class="comp-title">Performance</div>
+            <div class="comp-desc">Código enxuto, sem dependências desnecessárias.</div>
+          </div>
+          <div class="comp-card">
+            <span class="comp-tag">a11y</span>
+            <div class="comp-title">Acessibilidade</div>
+            <div class="comp-desc">HTML semântico e contraste adequado para todos os usuários.</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Integração github -->
+      <section id="github">
+        <div class="sec-head reveal">
+          <div class="sec-label">open source</div>
+          <div class="sec-title">GitHub</div>
+        </div>
+        <div class="gh-card reveal">
+          <div class="gh-top">
+            <div class="gh-ava">
+              <img src="https://avatars.githubusercontent.com/LucasDomingoscode" alt="Lucas Domingos Costa"
+                onerror="this.parentElement.style.background='var(--bg3)'">
+            </div>
+            <div>
+              <div class="gh-name">Lucas Domingos Costa</div>
+              <div class="gh-handle">@LucasDomingoscode</div>
+            </div>
+            <a href="https://github.com/LucasDomingoscode" target="_blank" class="gh-cta">
+              Acessar perfil
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7v10" />
+              </svg>
+            </a>
+          </div>
+          <div class="gh-meta-row"><span class="gh-mk">Usuário</span><span class="gh-mv">LucasDomingoscode</span></div>
+          <div class="gh-meta-row"><span class="gh-mk">Foco</span><span class="gh-mv">web · security · open
+              source</span></div>
+        </div>
+        <div class="gh-charts reveal">
+          <img id="ghStats"
+            src="https://github-readme-stats.vercel.app/api?username=LucasDomingoscode&show_icons=true&hide_border=true&theme=transparent&title_color=5bc0be&icon_color=5bc0be&text_color=5bc0be&bg_color=00000000">
+
+          <img id="ghLangs"
+            src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucasDomingoscode&layout=compact&hide_border=true&theme=transparent&title_color=5bc0be&text_color=5bc0be&bg_color=00000000">
+        </div>
+      </section>
+
+      <!-- Dados de contato -->
+      <section id="contato">
+        <div class="sec-head">
+          <div class="sec-label">contato</div>
+          <div class="sec-title">Vamos conversar</div>
+        </div>
+
+        <div style="margin-bottom:2.5rem;max-width:800px;">
+          <a href="mailto:lucasdomingoscosta1@gmail.com"
+            style="display:block;padding:1rem 1.5rem;border:1px solid var(--border2);border-radius:6px;font-size:.88rem;color:var(--text);text-decoration:none;background:var(--bg2);text-align:center;transition:border-color .2s,background .2s;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;"
+            onmouseover="this.style.borderColor='var(--accent)';this.style.background='var(--surface)'"
+            onmouseout="this.style.borderColor='var(--border2)';this.style.background='var(--bg2)'">
+            lucasdomingoscosta1@gmail.com
           </a>
         </div>
-        <div class="gh-meta-row"><span class="gh-mk">Usuário</span><span class="gh-mv">LucasDomingoscode</span></div>
-        <div class="gh-meta-row"><span class="gh-mk">Foco</span><span class="gh-mv">web · security · open source</span></div>
-      </div>
-      <div class="gh-charts reveal">
-        <img id="ghStats" src="https://github-readme-stats.vercel.app/api?username=LucasDomingoscode&show_icons=true&theme=transparent&hide_border=true&title_color=bf3b2c&icon_color=bf3b2c&text_color=8c8480&bg_color=181616" alt="GitHub Stats">
-        <img id="ghLangs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=LucasDomingoscode&layout=compact&theme=transparent&hide_border=true&title_color=bf3b2c&text_color=8c8480&bg_color=181616" alt="Top Languages">
-      </div>
-    </section>
 
-    <!-- 5. CONTATO -->
-    <section id="contato">
-      <div class="sec-head">
-        <div class="sec-label">contato</div>
-        <div class="sec-title">Vamos conversar</div>
-      </div>
-
-      <div style="margin-bottom:2.5rem;max-width:800px;">
-        <a href="mailto:seuemail@email.com" style="display:block;padding:1rem 1.5rem;border:1px solid var(--border2);border-radius:6px;font-size:.88rem;color:var(--text);text-decoration:none;background:var(--bg2);text-align:center;transition:border-color .2s,background .2s;font-family:'JetBrains Mono',monospace;letter-spacing:.04em;"
-          onmouseover="this.style.borderColor='var(--accent)';this.style.background='var(--surface)'"
-          onmouseout="this.style.borderColor='var(--border2)';this.style.background='var(--bg2)'">
-          seuemail@email.com
-        </a>
-      </div>
-
-      <div style="max-width:800px;">
-        <div class="contact-links">
-          <a href="https://github.com/LucasDomingoscode" target="_blank" class="c-link">
-            <span class="c-lbl">GitHub</span>
-            <span class="c-val">github.com/LucasDomingoscode</span>
-          </a>
-          <a href="mailto:seuemail@email.com" class="c-link">
-            <span class="c-lbl">E-mail</span>
-            <span class="c-val">seuemail@email.com</span>
-          </a>
-          <a href="https://www.linkedin.com/in/lucas-domingos-49183a371" target="_blank" class="c-link">
-            <span class="c-lbl">LinkedIn</span>
-            <span class="c-val">linkedin.com/in/lucas-domingos-49183a371</span>
-          </a>
+        <div style="max-width:800px;">
+          <div class="contact-links">
+            <a href="https://github.com/LucasDomingoscode" target="_blank" class="c-link">
+              <span class="c-lbl">GitHub</span>
+              <span class="c-val">github.com/LucasDomingoscode</span>
+            </a>
+            <a href="mailto:lucasdomingoscosta1@gmail.com" class="c-link">
+              <span class="c-lbl">E-mail</span>
+              <span class="c-val">lucasdomingoscosta1@gmail.com</span>
+            </a>
+            <a href="https://www.www.linkedin.com/in/lucasdomingosc" target="_blank" class="c-link">
+              <span class="c-lbl">LinkedIn</span>
+              <span class="c-val">www.linkedin.com/in/lucasdomingosc</span>
+            </a>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </main>
-</div>
+    </main>
+  </div>
 
-<script src="js/main.js"></script>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
