@@ -24,8 +24,3 @@ O site foi construído do zero, focando em performance e em uma interface que se
 
 ---
 
-##  Como rodar o projeto
-
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/LucasDomingoscode/NOME-DO-SEU-REPOSITORIO.git](https://github.com/LucasDomingoscode/NOME-DO-SEU-REPOSITORIO.git)
